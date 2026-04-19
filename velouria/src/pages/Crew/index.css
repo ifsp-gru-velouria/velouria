@@ -1,0 +1,19 @@
+.crew {
+  padding: 1rem;
+}
+
+.crew-card-container {
+  align-items: start;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.crew-card-container img {
+  width: 200px;
+}
+
+.crew-card-container p {
+  margin-top: 1rem;
+  text-align: justify;
+}

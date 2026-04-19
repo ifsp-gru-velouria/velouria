@@ -1,0 +1,17 @@
+.main__container {
+  min-height: 100vh;
+  max-width: 860px;
+}
+.root__container {
+  align-items: center;
+  background-color: #444554;
+  color: #E5D0CC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map {
+  border: none;
+  width: 100%;
+}

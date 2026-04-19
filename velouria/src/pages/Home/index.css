@@ -1,0 +1,15 @@
+.hero__caption {
+  font-style: italic; 
+}
+
+.hero__container {
+  font-size: .8rem;
+  max-width: 860px;
+  text-align: center;
+}
+
+.hero__image {
+  filter: grayscale(25%) sepia(20%);
+  height: auto;
+  width: 100%;
+}

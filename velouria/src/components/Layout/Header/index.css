@@ -1,0 +1,24 @@
+.header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  height: 4rem;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__items {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__items--item, .header__items--item:link, .header__items--item:visited, .header__items--item:hover,.header__items--item:active {
+  color: '#E5D0CC';
+}
+
+.logo {
+  color: '#BFACB5' ;
+  font-size: 2rem;
+  font-style: italic;
+}

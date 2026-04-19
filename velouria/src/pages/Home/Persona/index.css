@@ -1,0 +1,37 @@
+.persona {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 280px;
+}
+
+.persona__link {
+  color: white;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.persona img {
+  border-radius: 100%;
+  width: 160px;
+}
+
+.persona p {
+  color: #BFACB5;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.persona span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.container {
+ align-items: center;
+ display: flex;
+ gap: 12;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
