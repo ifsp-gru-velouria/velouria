@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/velouria/static/css/main.6073e257.css",
+    "main.js": "/velouria/static/js/main.f3b8f010.js",
+    "static/js/453.bd4ee15d.chunk.js": "/velouria/static/js/453.bd4ee15d.chunk.js",
+    "static/media/DeathMohawk.otf": "/velouria/static/media/DeathMohawk.cd21e73ada8ec548ffe6.otf",
+    "static/media/MurderPark.otf": "/velouria/static/media/MurderPark.6f602847124f5131cf81.otf",
+    "index.html": "/velouria/index.html",
+    "main.6073e257.css.map": "/velouria/static/css/main.6073e257.css.map",
+    "main.f3b8f010.js.map": "/velouria/static/js/main.f3b8f010.js.map",
+    "453.bd4ee15d.chunk.js.map": "/velouria/static/js/453.bd4ee15d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6073e257.css",
+    "static/js/main.f3b8f010.js"
+  ]
+}
