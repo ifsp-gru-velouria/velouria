@@ -18,7 +18,7 @@ export const PersonaCard: FC<Properties> = ({ headline, image, name }): ReactEle
       <img src={`./assets/img/${image}`} alt={name} />
       <span>{name}</span>
       <p>{headline}</p>
-      <Link className='persona__link' href='/equipe'>Ver mais</Link>
+      <Link className='persona__link' href='#/equipe'>Ver mais</Link>
     </div>
   );
 };
