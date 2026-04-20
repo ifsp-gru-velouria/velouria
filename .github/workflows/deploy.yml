@@ -2,7 +2,7 @@ name: Deploy React App
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main"] 
 
 permissions:
   contents: read
@@ -26,9 +26,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
-        env:
-          CI: false 
+        run: CI=false npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

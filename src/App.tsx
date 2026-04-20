@@ -1,6 +1,6 @@
 import { FC, ReactElement } from 'react';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound';
 
 const App: FC = (): ReactElement => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<About />} path='/sobre' />
         <Route element={<Contact />} path='/fale-conosco' />
@@ -18,7 +18,7 @@ const App: FC = (): ReactElement => {
         <Route element={<Home />} path='/' />
         <Route element={<NotFound />} path='*' />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
