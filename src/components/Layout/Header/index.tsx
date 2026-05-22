@@ -19,6 +19,9 @@ export const Header = () => {
         <li>
           <Link className='header__items--item' href='#/sobre'>Sobre</Link>
         </li>
+        <li>
+          <Link className='header__items--item' href='#/swot'>S.W.O.T</Link>
+        </li>
       </ul>
     </header>
   );

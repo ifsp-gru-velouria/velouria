@@ -1,0 +1,16 @@
+.card__container {
+  padding: 1rem;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__list li {
+  list-style: square;
+}
+
+.card__title {
+  font-size: 2.4rem;
+}

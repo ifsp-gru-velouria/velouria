@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Crew from './pages/Crew';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import SWOT from './pages/SWOT';
 
 const App: FC = (): ReactElement => {
   return (
@@ -16,6 +17,7 @@ const App: FC = (): ReactElement => {
         <Route element={<Contact />} path='/fale-conosco' />
         <Route element={<Crew />} path='/equipe' />
         <Route element={<Home />} path='/' />
+        <Route element={<SWOT />} path='/swot' />
         <Route element={<NotFound />} path='*' />
       </Routes>
     </HashRouter>
