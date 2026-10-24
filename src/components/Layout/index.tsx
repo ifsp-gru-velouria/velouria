@@ -1,27 +1,45 @@
-import { ReactNode } from 'react';
+import { JSX, PropsWithChildren } from 'react';
 
-import { Header} from './Header';
+import styled from 'styled-components';
 
-import { Footer } from './Footer';
+import Header from './Header';
 
-import { ThemeProvider } from './Theme';
+import Footer from './Footer';
 
-import './index.css';
+import { DuskEmbrace, ThemeProvider } from './Theme';
 
-interface Properties {
-  children: ReactNode;
+const StyledContainer = styled.div`
+    align-items: center;
+    background-color: ${DuskEmbrace.CHARCOAL_BLUE};
+    color: ${DuskEmbrace.ALMOND_SILK};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;
+
+const StyledMain = styled.main`
+    min-height: 100vh;
+    max-width: 860px;
+`;
+
+function Providers({ children }: PropsWithChildren) {
+    const components = [
+        ThemeProvider,
+    ];
+
+    return components.reduceRight((previousChildren, Component) => {
+        return <Component>{previousChildren}</Component>;
+    }, children) as JSX.Element;
 }
 
-export const RootLayout = ({ children }: Properties) => {
-  return (
-    <div className='root__container'>
-      <Header />
-      <main className='main__container'>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
-      </main>
-      <Footer />
-    </div>
-  );
-};
+export function RootLayout({ children }: PropsWithChildren) {
+    return (
+        <StyledContainer>
+            <Header />
+                <StyledMain>
+                    <Providers>{children}</Providers>
+                </StyledMain>
+            <Footer />
+        </StyledContainer>
+    );
+}

@@ -1,10 +1,8 @@
-import { FC, ReactElement } from 'react';
+import styled from 'styled-components';
 
 import { RootLayout } from '../../components/Layout';
 
-import { Card } from './Card';
-
-import './index.css';
+import Card from './Card';
 
 interface Item {
   items: string[];
@@ -35,19 +33,28 @@ const items: Item[] = [
   ], },
 ];
 
-const SWOT: FC = (): ReactElement => {
+export default function Page() {
   return (
     <RootLayout>
-      <h1 className="title">Análise S.W.O.T</h1>
+      <StyledTitle>Análise S.W.O.T</StyledTitle>
 
-      <div className="items__container">
+      <StyledContainer>
       {items.map((item: Item, index: number) => (
-        <Card items={item.items} title={item.title} />
+        <Card key={index} items={item.items} title={item.title} />
       ))}
-      </div>
+      </StyledContainer>
       
     </RootLayout>
   );
-};
+}
 
-export default SWOT;
+const StyledTitle = styled.h1`
+  text-align: center; 
+`;
+
+const StyledContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+`;
