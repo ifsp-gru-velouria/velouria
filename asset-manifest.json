@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.e434a1f9.css",
-    "main.js": "./static/js/main.cb8e0cfa.js",
+    "main.css": "./static/css/main.a64a3cce.css",
+    "main.js": "./static/js/main.4bdcf77c.js",
     "static/js/453.bd4ee15d.chunk.js": "./static/js/453.bd4ee15d.chunk.js",
     "static/media/DeathMohawk.otf": "./static/media/DeathMohawk.cd21e73ada8ec548ffe6.otf",
     "static/media/MurderPark.otf": "./static/media/MurderPark.6f602847124f5131cf81.otf",
     "index.html": "./index.html",
-    "main.e434a1f9.css.map": "./static/css/main.e434a1f9.css.map",
-    "main.cb8e0cfa.js.map": "./static/js/main.cb8e0cfa.js.map",
+    "main.a64a3cce.css.map": "./static/css/main.a64a3cce.css.map",
+    "main.4bdcf77c.js.map": "./static/js/main.4bdcf77c.js.map",
     "453.bd4ee15d.chunk.js.map": "./static/js/453.bd4ee15d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e434a1f9.css",
-    "static/js/main.cb8e0cfa.js"
+    "static/css/main.a64a3cce.css",
+    "static/js/main.4bdcf77c.js"
   ]
 }
